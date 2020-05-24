@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.start-window {
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-window h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.btn {
+    padding: 1em 2em;
+    border: none;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.btn.button {
+    color: #202020;
+    background-color: #fff;
+    border-radius: 2em;
+    outline: none;
+}
+
+.btn.button:hover {
+    color: #fff;
+    background-color: #202020;
+}
+
+.out {
+    animation: out 200ms forwards ease-in;
+}
+
+@keyframes out {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
